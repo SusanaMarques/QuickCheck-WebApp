@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: white;
+}
+
+.Name {
+  position: absolute;
+  width: 680px;
+  height: 162px;
+  left: 225px;
+  top: 161px;
+
+  font-family: Damion;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 140px;
+  line-height: 192px;
+
+  color: #1565D9;
+}
+
+.underName {
+  position: absolute;
+  width: 540px;
+  height: 41px;
+  left: 343px;
+  top: 315px;
+
+  font-family: Barlow Semi Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #80B5EC;
+}
