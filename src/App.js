@@ -2,6 +2,7 @@ import './CSS/App.css';
 import { Link } from "react-router-dom";
 import { render } from '@testing-library/react';
 import { Component, useState, useEffect } from 'react';
+import SymptomPicker from "./SymptomPicker copy"
 const fs=require('fs')
 
 function App() {
@@ -26,15 +27,7 @@ function App() {
       <div className="underName">
         <p>We recommend medical exams based on your symptoms</p>
       </div>
-      {<h3>111</h3>};
-      <button onClick={()=>fetch('/symptoms').then(res => res.json()).then(data => data.symptoms.forEach(e=><h4>2:{e}</h4>))} >ClickME</button>;
-      
-      <form method="POST" action="/predict">
-      <label for="symptoms">Symptoms</label>
-      <input type="text" id="symptoms" name="symptoms" multiple></input>
-      <input type="text" id="symptoms" name="symptoms" multiple></input>
-      <input type="submit" value="Submit"></input>
-      </form>
+      <SymptomPicker/>
 
 
     </div>

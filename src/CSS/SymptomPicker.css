@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+
+.symptom{
+  
+background: #1565D9;
+border: 3px solid #1565D9;
+box-sizing: border-box;
+border-radius: 15px;
+}
+.symptomPicker{
+
+  
+  background: #FFFFFF;
+  border: 3px solid #1565D9;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+  position: absolute;
+  width: 770px;
+  height: 65px;
+  left: 235px;
+  top: 461px;
+
+  
+}
