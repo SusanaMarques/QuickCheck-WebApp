@@ -2,8 +2,11 @@ import './CSS/App.css';
 import { Link } from "react-router-dom";
 import { render } from '@testing-library/react';
 import { Component, useState, useEffect } from 'react';
+import svg1 from './images/1.svg'
+import svg2 from './images/2.svg'
 import SymptomPicker from "./SymptomPicker copy"
 const fs=require('fs')
+
 
 function App() {
 
@@ -13,21 +16,19 @@ function App() {
 
   
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <div className="Navbar">
-          <a class="nav-link active" href="diseases">Diseases </a>
-          <a class="nav-link active" href="precautions">Precautions</a>
-        </div>
-
-      </header>
+      <img src={svg1} className="svg1" />
       <div className="Name">
         <p>QuickCheck</p>
       </div>
+
       <div className="underName">
         <p>We recommend medical exams based on your symptoms</p>
       </div>
+
       <SymptomPicker/>
+      <img src={svg2} className="svg2" />
 
 
     </div>

@@ -5,8 +5,8 @@
 .App {
   text-align: center;
   position: relative;
-  width: 1440px;
-  height: 1024px;
+  width: 100%;
+  height: 100px !important;
   
   background: #FFFFFF;
 }
@@ -21,7 +21,7 @@
   width: 680px;
   height: 162px;
   left: 225px;
-  top: 161px;
+  top: auto;
 
   font-family: Damion;
   font-style: normal;
@@ -36,8 +36,8 @@
   position: absolute;
   width: 540px;
   height: 41px;
-  left: 343px;
-  top: 315px;
+  left: 320px;
+  top: 275px;
 
   font-family: Barlow Semi Condensed;
   font-style: normal;
@@ -65,4 +65,21 @@
   color: #80B5EC;
 
   mix-blend-mode: normal;
+}
+
+.svg2{
+  position: absolute;
+  width: 412px;
+  height: 398px;
+  left: -92px;
+  
+  
+}
+.svg1{
+  position: absolute;
+width: 774.2px;
+height: 555.03px;
+left: 900px;
+top: 178%;
+
 }

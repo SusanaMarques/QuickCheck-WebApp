@@ -11,8 +11,6 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route path="/diseases" component={Diseases} />
-      <Route path="/precautions" component={Precautions} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
