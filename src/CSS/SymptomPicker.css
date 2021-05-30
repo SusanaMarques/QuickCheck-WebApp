@@ -24,7 +24,6 @@ top: 370px;
   margin: 30px;
 }
 .pickerBox{
-  margin-bottom: 10px;
 }
 .checkSymptoms{
   width: 100%;
@@ -33,4 +32,11 @@ top: 370px;
 }
 .autocomplete{
   
+}
+.predictions{
+font-style: normal;
+font-size: 20px;
+line-height: 36px;
+
+color: #1565D9;
 }

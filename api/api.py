@@ -6,6 +6,14 @@ from flask_cors import CORS
 import pandas as pd
 from pandas import DataFrame
 import os
+import pickle
+import numpy as np
+from backend import encode, decode
+
+filename="./Best Models/bestKnn.sav"
+loaded_model = pickle.load(open(filename, 'rb'))
+print(loaded_model)
+
 
 
 app = Flask(__name__)
@@ -19,12 +27,19 @@ def get_current_time():
 def getPrediction():
     g=[]
     g =  request.get_json(force=True)["symptoms"]
-    print(g)    
+    g=encode(g)
+    g = loaded_model.predict(g.reshape(1, -1))[0]
+    g = decode(g).tolist()
+
     return {'list':g}
 #########################################
 @app.route('/symptoms', methods = ['GET'])
 def getSymptoms():
     g=[]
-    path="../../LEI/Data/final.csv"
-    g = pd.read_csv(path).columns.to_numpy()[131:].tolist()
+    path="./final.csv"
+
+    g = pd.read_csv(path, sep=';').columns.to_numpy()
+    sympIndx = np.where(g=="Itching")[0][0]
+    g = g[sympIndx:].tolist()
+
     return {'symptoms':g}
