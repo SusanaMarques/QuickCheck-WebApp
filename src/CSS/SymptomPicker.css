@@ -1,42 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
 
 .symptom{
-background: #1565D9;
-border: 3px solid #1565D9;
-box-sizing: border-box;
-border-radius: 15px;
+  background: #1565D9;
+  border: 3px solid #1565D9;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.text{
+  color: #1565D9;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  
 }
 
 .pickerFrame{
   background: #FFFFFF;
   border: 3px solid #1565D9;
   box-sizing: border-box;
-  border-radius: 15px;
+  border-radius: 12px;
 }
-.symptomPicker{
 
+.symptomPicker{
   position: absolute;
-width: 770px;
-height: 65px;
-left: 350px;
-top: 370px;
+  width: 770px;
+  height: 65px;
+  left: 350px;
+  top: 370px;
   margin: 30px;
 }
-.pickerBox{
-}
+
+
 .checkSymptoms{
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
 }
-.autocomplete{
-  
-}
-.predictions{
-font-style: normal;
-font-size: 20px;
-line-height: 36px;
 
-color: #1565D9;
+
+.predictions{
+  font-size: 20px;
+  line-height: 36px;
+  color: #1565D9;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
 }
+
