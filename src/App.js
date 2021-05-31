@@ -24,7 +24,7 @@ function App() {
       </div>
 
       <div className="underName">
-        <p>We recommend medical exams based on your symptoms</p>
+        <p>We recommend medical exams based on symptoms</p>
       </div>
 
       <SymptomPicker/>
